@@ -3,4 +3,13 @@
 return [
 	'SERVER_ENVIRONMENT'=>'development', /* development, testing, production */
 	'SERVER_DEBUG'=>'development', /* development, testing, production */
+
+	'DOMAIN'=>$_SERVER['SERVER_NAME'], /* <- WARNING CHANGE THIS TO HARD CODED NAME! */
+
+	'encryption_key'=>'maryhadalittlelamb',
+
+	'database.default.hostname'=>'localhost',
+	'database.default.username'=>'skynet',
+	'database.default.password'=>'skynet',
+	'database.default.database'=>'skynet_development_com',
 ];
