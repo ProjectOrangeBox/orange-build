@@ -1,0 +1,7 @@
+{
+	"minimum-stability": "dev",
+	"require": {
+		"codeigniter/framework": "^3.1",
+		"mmucklo/krumo": "*"
+	}
+}
