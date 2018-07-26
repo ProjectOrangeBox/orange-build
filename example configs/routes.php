@@ -7,19 +7,19 @@ $route = array (
   },
 
   'admin/(.*)' => function($url) {
-  	middleware('AdminMiddleware','PublicMiddleware','GuiMiddleware');
+  	orange_middleware::set('AdminMiddleware','PublicMiddleware','GuiMiddleware');
 
   	return 'admin/'.$url;
   },
 
   'login(.*)' => function($url) {
-  	middleware('LoginMiddleware','PublicMiddleware','GuiMiddleware');
+  	orange_middleware::set('LoginMiddleware','PublicMiddleware','GuiMiddleware');
 
   	return 'login'.$url;
   },
 
   '(.*)' => function($url) {
-  	middleware('PublicMiddleware','GuiMiddleware');
+  	orange_middleware::set('PublicMiddleware','GuiMiddleware');
 
   	return $url;
   },
